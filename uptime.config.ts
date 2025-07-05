@@ -29,7 +29,7 @@ const workerConfig: WorkerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'foo_monitor',
       // `name` is used at status page and callback message
-      name: 'My API Monitor',
+      name: 'My API Monitor thing',
       // `method` should be a valid HTTP Method
       method: 'POST',
       // `target` is a valid URL
@@ -142,4 +142,5 @@ const maintenances: MaintenanceConfig[] = [
 ]
 
 // Don't forget this, otherwise compilation fails.
-export { pageConfig, workerConfig, maintenances }
+export { maintenances, pageConfig, workerConfig }
+
